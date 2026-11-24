@@ -275,6 +275,15 @@
   modal?.addEventListener("click", e => {
     if (e.target === modal) closeArticleModal();
   });
+  modal?.addEventListener("close", () => {
+    document.body.style.overflow = "";
+  });
+
+  // Open a specific article when linked as news-and-blogs.html?article=<id>
+  const linkedArticle = new URLSearchParams(window.location.search).get("article");
+  if (linkedArticle && articlesData[linkedArticle]) {
+    openArticleModal(linkedArticle);
+  }
 
   // --- 3. BILINGUAL LANGUAGE SWITCHING ---
   const langButtons = document.querySelectorAll("[data-lang]");
