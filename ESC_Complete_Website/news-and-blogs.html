@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#85002e" />
+  <title>News and Blogs | ESC Utility Services Pvt. Ltd.</title>
+  <link rel="stylesheet" href="styles.css?v=20261124_news_blogs" />
+</head>
+<body class="news-blogs-page">
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <b>ESC</b>
+        <small>UTILITY SERVICES PVT. LTD.</small>
+      </a>
+      <div class="toplinks">
+        <a href="careers.html" data-en="Careers" data-de="Karriere">Careers</a>
+        <a href="contact.html" data-en="Contact" data-de="Kontakt">Contact</a>
+        <span class="lang">
+          <button class="chosen" data-lang="en" type="button">EN</button>
+          <button class="" data-lang="de" type="button">DE</button>
+        </span>
+      </div>
+    </div>
+    <div class="navrow">
+      <nav aria-label="Main navigation">
+        <a href="about.html" data-en="About ESC" data-de="Über ESC">About ESC</a>
+        <a href="services.html" data-en="Services" data-de="Leistungen">Services</a>
+        <a href="innovation.html" data-en="Technology &amp; Innovation" data-de="Technologie &amp; Innovation">Technology &amp; Innovation</a>
+        <a class="nav-active" href="news-and-blogs.html" data-en="News and Blogs" data-de="News und Blogs">News and Blogs</a>
+      </nav>
+      <button aria-label="Toggle menu" class="menu" id="menu" type="button">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="news-hero">
+      <div class="news-hero-container">
+        <div class="news-hero-copy">
+          <h1 data-en="News and Blogs" data-de="News und Blogs">News and Blogs</h1>
+          <p data-en="Explore our latest company updates, technology news and expert insights." data-de="Entdecken Sie unsere neuesten Unternehmens-Updates, Technologie-News und Experten-Einblicke.">Explore our latest company updates, technology news and expert insights.</p>
+          <div class="news-hero-accent-bar" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <section class="news-main-section">
+      <div class="news-container">
+        
+        <!-- FEATURED ARTICLE: ISO CERTIFICATION -->
+        <article class="featured-news-card" data-category="company" data-type="news">
+          <div class="featured-card-img-wrap">
+            <img src="assets/esc-reception.jpg" alt="ESC Reception and Office at Technopark" class="featured-card-img" />
+          </div>
+          <div class="featured-card-body">
+            <div class="featured-card-top">
+              <span class="badge-tag badge-tag-rose" data-en="Company News" data-de="Unternehmens-News">Company News</span>
+              <span class="featured-date" data-en="Nov 20, 2026" data-de="20. Nov 2026">Nov 20, 2026</span>
+            </div>
+            
+            <div class="featured-heading-block">
+              <h2 data-en="ESC Achieves ISO/IEC 27001:2022 Certification" data-de="ESC erhält ISO/IEC 27001:2022 Zertifizierung">ESC Achieves ISO/IEC 27001:2022 Certification</h2>
+            </div>
+            
+            <p data-en="We are pleased to announce that ESC Utility Services Pvt. Ltd. is now ISO/IEC 27001:2022 certified, reaffirming our commitment to information security, data protection, and operational excellence." data-de="Wir freuen uns bekannt zu geben, dass die ESC Utility Services Pvt. Ltd. nach ISO/IEC 27001:2022 zertifiziert wurde – eine Bestätigung unseres kontinuierlichen Engagements für Informationssicherheit, Datenschutz und operative Exzellenz.">We are pleased to announce that ESC Utility Services Pvt. Ltd. is now ISO/IEC 27001:2022 certified, reaffirming our commitment to information security, data protection, and operational excellence.</p>
+            
+            <div class="featured-btn-wrap">
+              <button type="button" class="btn-featured-read modal-open-btn" data-article="iso27001" data-en="Read more &rarr;" data-de="Mehr lesen &rarr;">Read more &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- HORIZONTAL CATEGORY FILTERS -->
+        <div class="news-filter-wrapper" role="toolbar" aria-label="Filter articles by category">
+          <button type="button" class="news-filter-btn active" data-filter="all" data-en="All" data-de="Alle">All</button>
+          <button type="button" class="news-filter-btn" data-filter="news" data-en="News" data-de="News">News</button>
+          <button type="button" class="news-filter-btn" data-filter="blogs" data-en="Blogs" data-de="Blogs">Blogs</button>
+          <button type="button" class="news-filter-btn" data-filter="company" data-en="Company" data-de="Unternehmen">Company</button>
+          <button type="button" class="news-filter-btn" data-filter="technology" data-en="Technology" data-de="Technologie">Technology</button>
+          <button type="button" class="news-filter-btn" data-filter="industry" data-en="Industry" data-de="Branche">Industry</button>
+          <button type="button" class="news-filter-btn" data-filter="projects" data-en="Projects" data-de="Projekte">Projects</button>
+          <button type="button" class="news-filter-btn" data-filter="events" data-en="Events" data-de="Events">Events</button>
+        </div>
+
+        <!-- ARTICLE CARDS GRID -->
+        <div class="news-articles-grid" id="newsArticlesGrid">
+          
+          <!-- Article 1: Hackathon (News | Company) -->
+          <article class="news-article-card" data-type="news" data-category="company" data-tags="news company technology projects events">
+            <div class="card-img-holder">
+              <img src="assets/news-hackathon.jpg" alt="ESC Teams participating at AI Hackathon" class="card-cover-img" loading="lazy" />
+            </div>
+            <div class="card-content-body">
+              <div class="card-meta-row">
+                <div class="card-badges-group">
+                  <span class="badge-tag badge-tag-rose" data-en="News" data-de="News">News</span>
+                  <span class="badge-tag badge-tag-gray" data-en="Company" data-de="Unternehmen">Company</span>
+                </div>
+                <time class="card-pub-date" datetime="2026-11-12">
+                  <span class="cal-icon" aria-hidden="true">📅</span>
+                  <span data-en="Nov 12, 2026" data-de="12. Nov 2026">Nov 12, 2026</span>
+                </time>
+              </div>
+
+              <h3 class="card-title" data-en="ESC Participates in Generative AI &amp; Agentic AI Hackathon" data-de="ESC nimmt am Generative AI &amp; Agentic AI Hackathon teil">ESC Participates in Generative AI &amp; Agentic AI Hackathon</h3>
+              
+              <p class="card-description" data-en="Our teams showcased innovative AI use cases for real-world business challenges in the utility sector." data-de="Unsere Teams präsentierten innovative KI-Anwendungsfälle für reale geschäftliche Herausforderungen in der Versorgungswirtschaft.">Our teams showcased innovative AI use cases for real-world business challenges in the utility sector.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="card-text-link modal-open-btn" data-article="hackathon" data-en="Read more &rarr;" data-de="Mehr lesen &rarr;">Read more &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2: SAP Business Workflows (Blog | SAP) -->
+          <article class="news-article-card" data-type="blogs" data-category="sap" data-tags="blogs technology industry company">
+            <div class="card-img-holder">
+              <img src="assets/blog-sap-ai.jpg" alt="Integrating AI into SAP workflows" class="card-cover-img" loading="lazy" />
+            </div>
+            <div class="card-content-body">
+              <div class="card-meta-row">
+                <div class="card-badges-group">
+                  <span class="badge-tag badge-tag-rose" data-en="Blog" data-de="Blog">Blog</span>
+                  <span class="badge-tag badge-tag-gray">SAP</span>
+                </div>
+                <time class="card-pub-date" datetime="2026-10-28">
+                  <span class="cal-icon" aria-hidden="true">📅</span>
+                  <span data-en="Oct 28, 2026" data-de="28. Okt 2026">Oct 28, 2026</span>
+                </time>
+              </div>
+
+              <h3 class="card-title" data-en="Integrating AI into SAP Business Workflows" data-de="Integration von KI in SAP-Geschäftsprozesse">Integrating AI into SAP Business Workflows</h3>
+              
+              <p class="card-description" data-en="A practical look at how AI can enhance SAP processes, enabling faster, smarter and more efficient operations." data-de="Ein praxisnaher Einblick, wie KI SAP-Prozesse erweitert und schnellere, intelligentere sowie effizientere Abläufe ermöglicht.">A practical look at how AI can enhance SAP processes, enabling faster, smarter and more efficient operations.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="card-text-link modal-open-btn" data-article="sap-ai" data-en="Read article &rarr;" data-de="Artikel lesen &rarr;">Read article &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3: Transforming Utility Operations (Blog | Technology) -->
+          <article class="news-article-card" data-type="blogs" data-category="technology" data-tags="blogs technology industry projects">
+            <div class="card-img-holder">
+              <img src="assets/blog-ai-utilities.jpg" alt="How AI is transforming utility operations" class="card-cover-img" loading="lazy" />
+            </div>
+            <div class="card-content-body">
+              <div class="card-meta-row">
+                <div class="card-badges-group">
+                  <span class="badge-tag badge-tag-rose" data-en="Blog" data-de="Blog">Blog</span>
+                  <span class="badge-tag badge-tag-gray" data-en="Technology" data-de="Technologie">Technology</span>
+                </div>
+                <time class="card-pub-date" datetime="2026-10-15">
+                  <span class="cal-icon" aria-hidden="true">📅</span>
+                  <span data-en="Oct 15, 2026" data-de="15. Okt 2026">Oct 15, 2026</span>
+                </time>
+              </div>
+
+              <h3 class="card-title" data-en="How AI Is Transforming Utility Operations" data-de="Wie KI den Versorgerbetrieb transformiert">How AI Is Transforming Utility Operations</h3>
+              
+              <p class="card-description" data-en="Explore how AI can automate tasks, improve decision-making and create greater efficiency in Energy, Gas and Water operations." data-de="Erfahren Sie, wie KI Aufgaben automatisiert, Entscheidungsfindungen verbessert und Effizienz in Strom-, Gas- und Wasserbetrieben steigert.">Explore how AI can automate tasks, improve decision-making and create greater efficiency in Energy, Gas and Water operations.</p>
+              
+              <div class="card-footer-action">
+                <button type="button" class="card-text-link modal-open-btn" data-article="ai-utilities" data-en="Read article &rarr;" data-de="Artikel lesen &rarr;">Read article &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty state message if filter has no direct results -->
+        <div id="noResultsMsg" class="no-results-msg" style="display: none;">
+          <p data-en="No articles found in this category currently." data-de="Zurzeit keine Artikel in dieser Kategorie gefunden.">No articles found in this category currently.</p>
+          <button type="button" class="btn-reset-filter" id="btnResetFilter" data-en="Show all articles" data-de="Alle Artikel anzeigen">Show all articles</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="brand">
+      <b>ESC</b>
+      <small>UTILITY SERVICES PVT. LTD.</small>
+    </div>
+    <p data-en="Business excellence through IT &amp; Innovation." data-de="Geschäftliche Exzellenz durch IT &amp; Innovation.">Business excellence through IT &amp; Innovation.</p>
+    <p>© <span id="year">2026</span> ESC Utility Services Pvt. Ltd. &middot; Website prototype</p>
+    <a href="#top" data-en="Back to top ↑" data-de="Nach oben ↑">Back to top ↑</a>
+  </footer>
+
+  <!-- FULL ARTICLE MODAL -->
+  <dialog id="articleModal" class="article-modal-dialog">
+    <div class="modal-card">
+      <button aria-label="Close modal" class="modal-close-btn" id="closeArticleModal" type="button">×</button>
+      <div class="modal-scroll-body" id="articleModalContent">
+        <!-- Injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </dialog>
+
+  <script src="news-blogs.js?v=20261124_1"></script>
+</body>
+</html>
