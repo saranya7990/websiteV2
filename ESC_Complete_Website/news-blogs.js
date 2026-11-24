@@ -145,10 +145,21 @@
 
   // --- 1. CATEGORY FILTERING ---
   const filterButtons = document.querySelectorAll(".news-filter-btn");
-  const articleCards = document.querySelectorAll(".news-article-card");
   const featuredCard = document.querySelector(".featured-news-card");
   const noResultsMsg = document.getElementById("noResultsMsg");
   const btnResetFilter = document.getElementById("btnResetFilter");
+
+  // The featured (latest) item is always shown above the filters and is never
+  // filtered. If the same article also appears in the grid, drop that duplicate.
+  const featuredArticleId = featuredCard?.querySelector(".modal-open-btn")?.dataset.article;
+  const articleCards = Array.from(document.querySelectorAll(".news-article-card")).filter(card => {
+    const cardId = card.querySelector(".modal-open-btn")?.dataset.article;
+    if (featuredArticleId && cardId === featuredArticleId) {
+      card.remove();
+      return false;
+    }
+    return true;
+  });
 
   function applyFilter(category) {
     category = category.toLowerCase().trim();
@@ -160,17 +171,7 @@
 
     let visibleCardsCount = 0;
 
-    // Filter Featured Article: visible if 'all', 'news', or 'company'
-    if (featuredCard) {
-      if (category === "all" || category === "news" || category === "company") {
-        featuredCard.style.display = "";
-        featuredCard.style.opacity = "1";
-      } else {
-        featuredCard.style.display = "none";
-      }
-    }
-
-    // Filter Grid Cards
+    // Filter Grid Cards only (the featured card stays visible for every filter)
     articleCards.forEach(card => {
       const type = (card.dataset.type || "").toLowerCase();
       const cat = (card.dataset.category || "").toLowerCase();
@@ -201,7 +202,7 @@
 
     // Check if any card is visible
     if (noResultsMsg) {
-      if (visibleCardsCount === 0 && (!featuredCard || featuredCard.style.display === "none")) {
+      if (visibleCardsCount === 0) {
         noResultsMsg.style.display = "block";
       } else {
         noResultsMsg.style.display = "none";
