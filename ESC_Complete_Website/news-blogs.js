@@ -225,9 +225,12 @@
   const modalContent = document.getElementById("articleModalContent");
   const closeModalBtn = document.getElementById("closeArticleModal");
 
+  let currentArticleId = null;
+
   function openArticleModal(articleId) {
     const data = articlesData[articleId];
     if (!data || !modal || !modalContent) return;
+    currentArticleId = articleId;
 
     const currentLang = document.documentElement.lang || "en";
     const isDe = currentLang === "de";
@@ -254,7 +257,7 @@
       </div>
     `;
 
-    modal.showModal();
+    if (!modal.open) modal.showModal();
     document.body.style.overflow = "hidden";
   }
 
@@ -298,6 +301,9 @@
       document.querySelectorAll("[data-en][data-de]").forEach(el => {
         el.innerHTML = el.dataset[chosenLang];
       });
+
+      // Re-render an open article in the newly chosen language
+      if (modal?.open && currentArticleId) openArticleModal(currentArticleId);
     });
   });
 
