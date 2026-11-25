@@ -8,7 +8,7 @@
       dateDe: "20. Nov 2026",
       title: "ESC Achieves ISO/IEC 27001:2022 Certification",
       titleDe: "ESC erhält ISO/IEC 27001:2022 Zertifizierung",
-      image: "assets/esc-reception.jpg",
+      image: "assets/ISMS.jpg",
       bodyHtmlEn: `
         <p class="modal-lead">We are pleased to announce that ESC Utility Services Pvt. Ltd. is now ISO/IEC 27001:2022 certified, reaffirming our commitment to information security, data protection, and operational excellence.</p>
         <p>This internationally recognized standard confirms that our Information Security Management System (ISMS) meets the most rigorous global benchmarks for safeguarding sensitive client data, intellectual property, and enterprise IT infrastructure.</p>
